@@ -187,7 +187,11 @@ function sendEmail(recipient, subject) {
 ### 13. Exercise 13
 **Price Increase**: You have an array: `const oldPrices = [50, 100, 250]`. Use `.map()` to create a new array where every price is increased by 10% due to inflation.
 ```javascript
-// Copy your code here
+let inflation = 0.1; // 10% = 10/100
+const newPrice = [50, 100, 250].map(function (price) {
+    return price + (price * inflation);
+});
+console.log(newPrice);
 ```
 
 ### 14. Exercise 14

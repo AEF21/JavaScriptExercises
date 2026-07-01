@@ -152,5 +152,12 @@ function sendEmail(recipient, subject) {
 
 }
 
+//================Exercise 13 =================//
+let inflation = 0.1; // 10% = 10/100
+const newPrice = [50, 100, 250].map(function (price) {
+    return price + (price * inflation);
+});
+console.log(newPrice);
+
 
 
