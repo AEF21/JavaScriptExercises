@@ -5,7 +5,16 @@
 ### 1. Exercise 1
 **User Profile**: Create a program that defines three variables for a social media profile: a user's `username` (string), `age` (number), and `isOnline` (boolean). Then, output a welcome message using a **template literal** (e.g., "Welcome, Astrid! You are 28 years old and currently online.").
 ```javascript
-// Copy your code here
+class UserProfile {
+    constructor(name,age,isOnLine) {
+        this.name = name;
+        this.age = age;
+        this.isOnLine = isOnLine;
+    }
+    greet(){
+        console.log("Welcome, my name is !" + this.name + this.age + this.isOnLine);
+    }
+}
 ```
 ### 2. Exercise 2
 **Shopping Receipt**: Create two variables `price` and `quantity` with values `150` and `3`. Calculate and log the `subtotal`. Then, calculate the **tax** (25% of subtotal) and the **final total**.
