@@ -50,7 +50,7 @@ Explain in a comment why we should prefer `===` for checking user IDs or passwor
 ```javascript
 let visitorAge = 21;
 function validateVisitorAge (visitorAge) {
-    if (visitorAge >= 12 && visitorAge) {
+    if (visitorAge >= 12 && visitorAge <= 18) {
         console.log(true);
     }else
         console.log(false);
@@ -64,7 +64,16 @@ validateVisitorAge(visitorAge);
 - If it's between 18 and 25, log "Temperature is perfect. ✅"
 - If it's below 18, log "Turning on the heater... 🔥"
 ```javascript
-// Copy your code here
+
+let roomTemperature = 22;
+
+if (roomTemperature > 25) {
+    console.log("Turning on the AC... ❄️");
+} else if (roomTemperature >= 18 && roomTemperature <= 25) {
+    console.log("Temperature is perfect. ✅");
+} else {
+    console.log("Turning on the heater... 🔥");
+}
 ```
 
 ### 6. Exercise 6
