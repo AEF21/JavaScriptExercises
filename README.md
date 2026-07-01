@@ -234,7 +234,8 @@ console.log(UserAccount);
 ### 18. Exercise 18
 **Local Storage Simulation**: Convert your `userAccount` object into a **JSON string** (like you would do to save it to LocalStorage). Then, parse it back into an object.
 ```javascript
-// Copy your code here
+const jsonStr = JSON.stringify(UserAccount);
+console.log(jsonStr);
 ```
 
 ### 19. Exercise 19

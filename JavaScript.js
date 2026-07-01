@@ -185,3 +185,6 @@ UserAccount.bio=  profilePictureUrl="https://example.com/my-photo.jpg";
 
 delete UserAccount.email;
 console.log(UserAccount);
+//================Exercise 18 =================//
+const jsonStr = JSON.stringify(UserAccount);
+console.log(jsonStr);
