@@ -19,7 +19,13 @@ class UserProfile {
 ### 2. Exercise 2
 **Shopping Receipt**: Create two variables `price` and `quantity` with values `150` and `3`. Calculate and log the `subtotal`. Then, calculate the **tax** (25% of subtotal) and the **final total**.
 ```javascript
-// Copy your code here
+let Price = 150;
+let Quantity = 3;
+let Tax = 0.25 //25%
+
+let SubTotal = Quantity * Price; //Sum TaxFree 
+let total =SubTotal * Tax ;       // Sum After calculate Tax
+console.log("Total:" + total);
 ```
 
 ### 3. Exercise 3
