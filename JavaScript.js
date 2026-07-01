@@ -37,3 +37,17 @@ if (roomTemperature > 25) {
 } else {
     console.log("Turning on the heater... 🔥");
 }
+//================Exercise 6 =================//
+let isLoggedIn = false;
+
+console.log(isLoggedIn ? "logout" : "login"); //single Line
+
+// multiple line
+function ToggleVisibility(){
+    isLoggedIn = !isLoggedIn
+    if(isLoggedIn === true){
+        console.log("logout");
+    }else //!isloggedIn
+        console.log("login");
+}
+ToggleVisibility();

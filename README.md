@@ -79,7 +79,9 @@ if (roomTemperature > 25) {
 ### 6. Exercise 6
 **Login Toggle**: Use a **single line** ternary operator to set a variable `buttonText`. If the variable `isLoggedIn` is `true`, the button should say `"Logout"`, otherwise it should say `"Login"`.
 ```javascript
-// Copy your code here
+let isLoggedIn = false;
+
+console.log(isLoggedIn ? "logout" : "login"); //single Line
 ```
 
 ### 7. Exercise 7
