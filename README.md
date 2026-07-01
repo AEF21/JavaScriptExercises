@@ -91,7 +91,21 @@ console.log(isLoggedIn ? "logout" : "login"); //single Line
 - `"green"` -> "Go!"
 - Default -> "Invalid color."
 ```javascript
-// Copy your code here
+const TrafficLight = ["Red", "Yellow", "Green"];
+switch (TrafficLight[0]) { // change indexNumber of color to test switch cases
+    case "Red":
+        console.log("Stop!");
+        break;
+    case "Yellow":
+        console.log("Slow down!");
+        break;
+    case "Green":
+        console.log("Go!");
+        break;
+    default :
+        console.log("Invalid Color");
+
+}
 ```
 
 ### 8. Exercise 8

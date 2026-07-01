@@ -6,7 +6,7 @@ let Quantity = 3;
 let Tax = 0.25 //25%
 
 let SubTotal = Quantity * Price; //Sum TaxFree
-let total =SubTotal * Tax ;       // Sum After calculate Tax
+let total = SubTotal * Tax;       // Sum After calculate Tax
 console.log("Total:" + total);
 
 //================Exercise 3 =================//
@@ -19,12 +19,14 @@ console.log("Total:" + total);
  */
 //================Exercise 4 =================//
 let visitorAge = 21;
-function validateVisitorAge (visitorAge) {
+
+function validateVisitorAge(visitorAge) {
     if (visitorAge >= 12 && visitorAge <= 18) {
-    console.log(true);
-    }else
-    console.log(false);
+        console.log(true);
+    } else
+        console.log(false);
 }
+
 validateVisitorAge(visitorAge);
 //================Exercise 5 =================//
 
@@ -43,11 +45,28 @@ let isLoggedIn = false;
 console.log(isLoggedIn ? "logout" : "login"); //single Line
 
 // multiple line
-function ToggleVisibility(){
+function ToggleVisibility() {
     isLoggedIn = !isLoggedIn
-    if(isLoggedIn === true){
+    if (isLoggedIn === true) {
         console.log("logout");
-    }else //!isloggedIn
+    } else //!isloggedIn
         console.log("login");
 }
+
 ToggleVisibility();
+//================Exercise 7 =================//
+const TrafficLight = ["Red", "Yellow", "Green"];
+switch (TrafficLight[0]) { // change indexNumber of color to test switch cases
+    case "Red":
+        console.log("Stop!");
+        break;
+    case "Yellow":
+        console.log("Slow down!");
+        break;
+    case "Green":
+        console.log("Go!");
+        break;
+    default :
+        console.log("Invalid Color");
+
+}
