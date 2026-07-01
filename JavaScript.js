@@ -58,7 +58,6 @@ ToggleVisibility();
 const TrafficLight = ["Red", "Yellow", "Green"];
 
 
-
 switch (TrafficLight[0]) { // change indexNumber of color to test switch cases
     case "Red":
         console.log("Stop!");
@@ -76,18 +75,25 @@ switch (TrafficLight[0]) { // change indexNumber of color to test switch cases
 
 //================Exercise 8 =================//
 
-        let count = 10;
-        let intervalTimer = setInterval(function (){
-        console.log(count);
-        count --;
+let count = 10;
+let intervalTimer = setInterval(function () {
+    console.log(count);
+    count--;
 
-        if(count <0){
+    if (count < 0) {
         clearInterval(intervalTimer);
         console.log("Lift Off! 🚀");
     }
-},1000);  // 100 ms = 1 second
+}, 1000);  // 100 ms = 1 second
 
+//================Exercise 9 =================//
+let NumberList = Array.from({length: 20}, (_, i) => i + 1);
 
+NumberList.forEach(function (number) {
+    if (number % 1 === 0) {
+        console.log(number)
+    }
 
+});
 
 

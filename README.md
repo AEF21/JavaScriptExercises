@@ -126,7 +126,14 @@ let intervalTimer = setInterval(function (){
 ### 9. Exercise 9
 **Number List**: Iterate through numbers `1` to `20`. For each number, log if it is `"Even"` (like a row in a table) or `"Odd"` using the remainder operator `%`.
 ```javascript
-// Copy your code here
+let NumberList = Array.from({length: 20}, (_, i) => i + 1);
+
+NumberList.forEach(function (number) {
+    if (number % 1 === 0) {
+        console.log(number)
+    }
+
+});
 ```
 
 ### 10. Exercise 10
