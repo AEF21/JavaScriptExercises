@@ -204,7 +204,8 @@ console.log(newArray);
 ### 15. Exercise 15
 **Cart Total**: You have an array of item prices in a cart: `const cart = [19.99, 5.50, 24.00]`. Use `.reduce()` to calculate the **Total Amount** the customer needs to pay.
 ```javascript
-// Copy your code here
+const TotalAmount = [19.99, 5.50, 24.00].reduce( (total,current) => total + current);
+console.log(TotalAmount.toFixed(2)); // Rounding total included multiple decimal using .toFixed(2) 2 digit only
 ```
 
 ### 16. Exercise 16
