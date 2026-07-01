@@ -201,3 +201,7 @@ function fetchConfig(jsonStr) {
 
 fetchConfig('{"name": "Angel", "age": 25}'); // giltig JSON
 fetchConfig('{name: Angel, age: 25}');        // TRASIG JSON — saknar citattecken
+//================Exercise 20 =================//
+const AutoDate = new Date(2026,03,03);
+console.log("Year:",AutoDate.getFullYear());
+console.log("Month:",AutoDate.getMonth());

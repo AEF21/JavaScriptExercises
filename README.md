@@ -257,5 +257,7 @@ fetchConfig('{name: Angel, age: 25}');        // Breaked JSON — saknar citatte
 ### 20. Exercise 20
 **Auto-Date**: Create a `Date` object. Log the current **Year** and **Month**, then format the date into a readable string like `"03/03/2026"` using `.toLocaleDateString()`.
 ```javascript
-// Copy your code here
+const AutoDate = new Date(2026,03,03);
+console.log("Year:",AutoDate.getFullYear());
+console.log("Month:",AutoDate.getMonth());
 ```
