@@ -211,7 +211,15 @@ console.log(TotalAmount.toFixed(2)); // Rounding total included multiple decimal
 ### 16. Exercise 16
 **User Object**: Create an object representing a `userAccount` with properties: `username`, `email`, `followerCount`, and `isVerified` (boolean). Log the username and email using dot notation.
 ```javascript
-// Copy your code here
+const UserAccount = {
+    userName: "Angel",
+    email: "angel@example.com",
+    followerCount: 700000,
+    isVarified: true
+
+};
+console.log(UserAccount.userName);
+console.log(UserAccount.email);
 ```
 
 ### 17. Exercise 17

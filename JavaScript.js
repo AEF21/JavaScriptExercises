@@ -164,3 +164,18 @@ console.log(newArray);
 //================Exercise 15 =================//
 const TotalAmount = [19.99, 5.50, 24.00].reduce( (total,current) => total + current);
 console.log(TotalAmount.toFixed(2)); // Rounding total included multiple decimal using .toFixed(2) 2 digit only
+
+
+
+
+//================Exercise 16 =========
+
+const UserAccount = {
+    userName: "Angel",
+    email: "angel@example.com",
+    followerCount: 700000,
+    isVarified: true
+
+};
+console.log(UserAccount.userName);
+console.log(UserAccount.email);
