@@ -111,7 +111,16 @@ switch (TrafficLight[0]) { // change indexNumber of color to test switch cases
 ### 8. Exercise 8
 **Countdown Timer**: Write a `for` loop that simulates a rocket launch countdown from `10` down to `1`, and then logs "Lift off! 🚀".
 ```javascript
-// Copy your code here
+        let count = 10;
+let intervalTimer = setInterval(function (){
+    console.log(count);
+    count --;
+
+    if(count <0){
+        clearInterval(intervalTimer);
+        console.log("Lift Off! 🚀");
+    }
+},1000);  // 100 ms = 1 second
 ```
 
 ### 9. Exercise 9
