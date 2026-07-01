@@ -188,3 +188,16 @@ console.log(UserAccount);
 //================Exercise 18 =================//
 const jsonStr = JSON.stringify(UserAccount);
 console.log(jsonStr);
+
+//================Exercise 19 =========
+function fetchConfig(jsonStr) {
+    try {
+        const data = JSON.parse(jsonStr);
+        console.log(data);
+    } catch (error) {
+        console.log("Configuration error: Please check your data.");
+    }
+}
+
+fetchConfig('{"name": "Angel", "age": 25}'); // giltig JSON
+fetchConfig('{name: Angel, age: 25}');        // TRASIG JSON — saknar citattecken

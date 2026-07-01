@@ -241,7 +241,17 @@ console.log(jsonStr);
 ### 19. Exercise 19
 **Safe API Parsing**: Write a function `fetchConfig` that takes a JSON string. Use `try...catch` to parse it. If the string is broken (invalid JSON), log a friendly error message: "Configuration error: Please check your data."
 ```javascript
-// Copy your code here
+function fetchConfig(jsonStr) {
+    try {
+        const data = JSON.parse(jsonStr);
+        console.log(data);
+    } catch (error) {
+        console.log("Configuration error: Please check your data.");
+    }
+}
+
+fetchConfig('{"name": "Angel", "age": 25}'); // varified JSON
+fetchConfig('{name: Angel, age: 25}');        // Breaked JSON — saknar citattecken
 ```
 
 ### 20. Exercise 20
