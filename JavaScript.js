@@ -107,4 +107,33 @@ function applyDiscount(price1, percentage) {
 
 applyDiscount(Price1, Percentage);
 
+//================Exercise 11 =================//
+
+let name = "Angel";
+const formatWelcome = (name) => "Hello, " + name + "! Welcome back.";
+
+console.log(formatWelcome("Angel"));
+
+
+/*
+let name = "Angel";
+
+const introduce = (userName) => {
+    return "Hello " + userName + " Welcome back";
+};
+
+const introduceFirstTime = (userName) => {
+    return "Hello " + userName + " Welcome to our site!";
+};
+
+// Kolla om användaren varit här förut
+if (localStorage.getItem("hasVisited")) {
+    console.log(introduce(name)); // återkommande besökare
+} else {
+    console.log(introduceFirstTime(name)); // första besöket
+    localStorage.setItem("hasVisited", "true"); // markera att de nu varit här
+}
+ */
+
+
 

@@ -158,7 +158,9 @@ function formatWelcome(name) {
 }
 ```
 ```javascript
-// Copy your code here
+const formatWelcome = (name) => "Hello, " + name + "! Welcome back.";
+
+console.log(formatWelcome("Angel"));
 ```
 
 ### 12. Exercise 12
