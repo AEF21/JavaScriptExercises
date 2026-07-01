@@ -134,6 +134,23 @@ if (localStorage.getItem("hasVisited")) {
     localStorage.setItem("hasVisited", "true"); // markera att de nu varit här
 }
  */
+//================Exercise 12 =================//
+let recipient = "angel@example.com";
+let subject = "Meeting Tomorrow";
+
+        // skicka värdena rakt av
+sendEmail(recipient);                     // No subject
+
+function sendEmail(recipient, subject) {
+    if (recipient && subject) {
+        console.log("Email sent!");
+    } else if (recipient) {
+        console.log("No subject!");
+    }else if(subject) {
+        console.log("No recipient!");
+    }
+
+}
 
 
 

@@ -166,7 +166,22 @@ console.log(formatWelcome("Angel"));
 ### 12. Exercise 12
 **Email Default**: Create a function `sendEmail` that takes a `recipient` and a `subject`. If `subject` is not provided, it should default to `"No Subject"`.
 ```javascript
-// Copy your code here
+let recipient = "angel@example.com";
+let subject = "Meeting Tomorrow";
+
+// skicka värdena rakt av
+sendEmail(recipient);                     
+
+function sendEmail(recipient, subject) {
+    if (recipient && subject) {
+        console.log("Email sent!");
+    } else if (recipient) { // No subject 
+        console.log("No subject!");
+    }else if(subject) {
+        console.log("No recipient!");
+    }
+
+}
 ```
 
 ### 13. Exercise 13
