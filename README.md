@@ -197,7 +197,8 @@ console.log(newPrice);
 ### 14. Exercise 14
 **Inventory Check**: You have an array of stock levels: `const inventory = [0, 12, 5, 0, 8, 3]`. Use `.filter()` to create a new array containing only the items that are **in stock** (greater than 0).
 ```javascript
-// Copy your code here
+const newArray = [0, 12, 5, 0, 8, 3].filter(count => count > 0);
+console.log(newArray);
 ```
 
 ### 15. Exercise 15

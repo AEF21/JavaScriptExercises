@@ -158,6 +158,6 @@ const newPrice = [50, 100, 250].map(function (price) {
     return price + (price * inflation);
 });
 console.log(newPrice);
-
-
-
+//================Exercise 14 =================//
+const newArray = [0, 12, 5, 0, 8, 3].filter(count => count > 0);
+console.log(newArray);
