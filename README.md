@@ -48,7 +48,14 @@ Explain in a comment why we should prefer `===` for checking user IDs or passwor
 ### 4. Exercise 4
 **Age Verification**: Write a script for a movie theater. Check if a variable `visitorAge` is between `12` and `18` (inclusive) to qualify for a "Teen Discount" using the `&&` operator. Log `true` or `false`.
 ```javascript
-// Copy your code here
+let visitorAge = 21;
+function validateVisitorAge (visitorAge) {
+    if (visitorAge >= 12 && visitorAge) {
+        console.log(true);
+    }else
+        console.log(false);
+}
+validateVisitorAge(visitorAge);
 ```
 
 ### 5. Exercise 5

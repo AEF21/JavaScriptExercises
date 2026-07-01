@@ -17,4 +17,12 @@ console.log("Total:" + total);
  * can share the same password, but no two users can have
  * both the same user ID and the same password.
  */
-
+//================Exercise 4 =================//
+let visitorAge = 21;
+function validateVisitorAge (visitorAge) {
+    if (visitorAge >= 12 && visitorAge) {
+    console.log(true);
+    }else
+    console.log(false);
+}
+validateVisitorAge(visitorAge);
