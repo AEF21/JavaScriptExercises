@@ -36,7 +36,13 @@ console.log("Total:" + total);
 - `undefined === null`
 Explain in a comment why we should prefer `===` for checking user IDs or passwords.
 ```javascript
-// Copy your code here
+/* 
+ * We use === instead of == for security reasons — it checks both 
+ * type and value, so it's harder to trick the comparison.
+ * Multiple users can share the same user ID, and multiple users 
+ * can share the same password, but no two users can have 
+ * both the same user ID and the same password.
+ */
 ```
 
 ### 4. Exercise 4

@@ -9,4 +9,12 @@ let SubTotal = Quantity * Price; //Sum TaxFree
 let total =SubTotal * Tax ;       // Sum After calculate Tax
 console.log("Total:" + total);
 
+//================Exercise 3 =================//
+/*
+ * We use === instead of == for security reasons — it checks both
+ * type and value, so it's harder to trick the comparison.
+ * Multiple users can share the same user ID, and multiple users
+ * can share the same password, but no two users can have
+ * both the same user ID and the same password.
+ */
 
