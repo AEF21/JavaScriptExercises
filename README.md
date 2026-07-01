@@ -139,7 +139,15 @@ NumberList.forEach(function (number) {
 ### 10. Exercise 10
 **Discount Function**: Create a function called `applyDiscount` that takes `price` and `percentage`. It should return the discounted price. (e.g., `applyDiscount(100, 20)` should return `80`).
 ```javascript
-// Copy your code here
+let Price1 = 100;
+let Percentage = 20;
+
+function applyDiscount(price1, percentage) {
+    let discountedPrice = price1 - (price1 * percentage / 100);
+    console.log("Discounted Price: " + discountedPrice);
+}
+
+applyDiscount(Price1, Percentage);
 ```
 
 ### 11. Exercise 11

@@ -95,5 +95,16 @@ NumberList.forEach(function (number) {
     }
 
 });
+//================Exercise 10 =================//
+
+let Price1 = 100;
+let Percentage = 20;
+
+function applyDiscount(price1, percentage) {
+    let discountedPrice = price1 - (price1 * percentage / 100);
+    console.log("Discounted Price: " + discountedPrice);
+}
+
+applyDiscount(Price1, Percentage);
 
 
