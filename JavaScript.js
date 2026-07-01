@@ -179,3 +179,9 @@ const UserAccount = {
 };
 console.log(UserAccount.userName);
 console.log(UserAccount.email);
+
+//================Exercise 17 =================//
+UserAccount.bio=  profilePictureUrl="https://example.com/my-photo.jpg";
+
+delete UserAccount.email;
+console.log(UserAccount);

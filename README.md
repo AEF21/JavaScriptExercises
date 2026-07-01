@@ -225,7 +225,10 @@ console.log(UserAccount.email);
 ### 17. Exercise 17
 **Profile Update**: Take the `userAccount` from Exercise 16. Add a `bio`, update the `followerCount`, and delete the `email` property (for privacy). Log the final object.
 ```javascript
-// Copy your code here
+UserAccount.bio=  profilePictureUrl="https://example.com/my-photo.jpg";
+
+delete UserAccount.email;
+console.log(UserAccount);
 ```
 
 ### 18. Exercise 18
